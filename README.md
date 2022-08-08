@@ -1,37 +1,58 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/wangdingfu/wangdingfu.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+# fu-api-doc-plugin
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[![JetBrains Plugins](https://img.shields.io/jetbrains/plugin/v/19269-fu-doc.svg)](https://plugins.jetbrains.com/plugin/19269-fu-doc)
+[![Version](http://phpstorm.espend.de/badge/19269/version)](https://plugins.jetbrains.com/plugin/19269-fu-doc/versions)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/19269-fu-doc.svg)](https://plugins.jetbrains.com/plugin/19269-fu-doc)
+[![License](https://img.shields.io/badge/license-MIT-red.svg)]()
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+> Fu Doc是一个根据 `JAVA` 代码一键生成 `markdown` 格式接口文档的 Idea 插件。你只需要在你的开发工具里安装上Fu Doc这个插件即可，对你的项目完全零侵入。当然需要有一个良好的开发习惯（写注释的好习惯），此时你只需要一个快捷键就可以生成你平时需要耗费大量时间去复制粘贴编写的接口文档
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+演示
+---
+![演示](https://user-images.githubusercontent.com/100477650/171110724-8a653d36-ee3d-4337-a662-1dc68d400e98.gif)
 
-1. Numbered
-2. List
+![插件截图1](https://user-images.githubusercontent.com/100477650/171110675-0822fee0-7a3e-4c59-b7cc-d645ac9feaee.png)
 
-**Bold** and _Italic_ and `Code` text
+![插件截图2](https://user-images.githubusercontent.com/100477650/171111420-cc94d6de-7d83-4132-a97a-23b1ab6c5408.png)
 
-[Link](url) and ![Image](src)
-```
+![插件生成的接口文档](https://user-images.githubusercontent.com/100477650/171110794-b1aacc55-8ca1-4795-a018-9e429b62fa9f.png)
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
+安装步骤
+---
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/wangdingfu/wangdingfu.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+- **在线安装:**
+    - `File` -> `Setting` -> `Plugins` -> 搜索 `Fu-Doc`
 
-### Support or Contact
+- **手动安装:**
+    - [下载插件（Github下载,速度慢）](https://github.com/wangdingfu/fu-api-doc-plugin/releases)
+    - [下载插件（蓝奏云下载,速度快）](https://wwi.lanzoup.com/b0dy2hktg) 密码：`8vec`
+    - 进入插件市场安装本地插件： `File` -> `Setting` -> `Plugins`
+      -> `Install Plugin from Disk...`
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+使用
+----
+
+- 快捷键`ALT+D`
+- 右键菜单选择 `Fu Doc`
+- 去接口文档系统直接将内容粘贴即可（例如ShowDoc或者YApi等）
+
+未来版本计划
+----
+
+- 一键将接口文档同步至ShowDoc、YApi、第三方文档系统（提供统一对外api）
+- 支持自定义高级扩展配置（例如解析自定义注解在接口文档中展示等扩展功能）
+- 支持接口模板动态配置
+
+其他
+---
+
+- Intellij Idea 版本支持2018.1 以上
+- 鼠标需要在Controller类代码块内 否则有可能会获取不到当前类导致无法生成接口文档
+- 当鼠标停留在方法体内或则选中方法一部分内容在点击生成接口文档. 则只会生成当前方法的接口文档
+- 小伙伴们如果使用有任何问题可以给我提Issues. 我会及时回复并解决
