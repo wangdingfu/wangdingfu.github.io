@@ -10,5 +10,5 @@
 
 
 [GitHub](https://github.com/wangdingfu/fu-api-doc-plugin)
-[Getting Started](#fu-api-doc-plugin)
+[Getting Started](#FuDoc)
 
