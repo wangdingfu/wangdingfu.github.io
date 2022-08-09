@@ -1,5 +1,5 @@
 
-# Fu Doc <small> v1.2.1 </small>
+# Fu Doc <small> v1.2.2 </small>
 
 
 > 一键生成markDown格式接口文档的IDEA插件
