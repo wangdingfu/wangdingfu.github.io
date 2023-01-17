@@ -2,7 +2,7 @@
 
 > 你可以进入`Fu Doc`的配置页面(`IDEA-->Settings-->Other Settings-->Fu Doc`)配置一些自定义内容
 
-![img.png](../img/img_70.png)
+![img.png](../img/img70.png)
 
 > 可以参考下方配置示例
 ```json
